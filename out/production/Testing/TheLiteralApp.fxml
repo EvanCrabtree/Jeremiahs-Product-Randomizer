@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="742.0" style="-fx-background-color: rgb(197,213,1);" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+  <tabs>
+    <Tab closable="false" text="Input">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: rgb(232,90,70);">
+               <children>
+                  <Pane layoutY="6.0" prefHeight="124.0" prefWidth="742.0" style="-fx-background-color: rgb(232,90,70);">
+                     <children>
+                        <ChoiceBox fx:id="sizeChoiceBox" layoutX="138.0" layoutY="37.0" prefWidth="150.0" style="-fx-background-color: rgb(232,90,70); -fx-border-color: black;" />
+                        <Label layoutX="41.0" layoutY="24.0" prefHeight="52.0" prefWidth="97.0" text="Size" textFill="#c5d501">
+                           <font>
+                              <Font name="Modern No. 20" size="47.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="368.0" layoutY="23.0" prefHeight="55.0" prefWidth="176.0" text="Product" textFill="#c5d501">
+                           <font>
+                              <Font name="Modern No. 20" size="50.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="productChoice" layoutX="544.0" layoutY="37.0" prefWidth="150.0" style="-fx-background-color: rgb(232,90,70); -fx-border-color: black;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutY="124.0" prefHeight="400.0" prefWidth="742.0">
+                     <children>
+                        <ImageView fx:id="orderView" fitHeight="416.0" fitWidth="314.0" layoutX="405.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Desktop/Jeremiahs%20Assets/IceCupTemplate.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="sizeProduct" layoutX="22.0" layoutY="28.0" prefHeight="52.0" prefWidth="408.0" text="Medium Italian Ice" textFill="#c5d501">
+                           <font>
+                              <Font name="Modern No. 20" size="46.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="cupPic" fitHeight="416.0" fitWidth="314.0" layoutX="405.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Desktop/Jeremiahs%20Assets/SmallIceCup.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="flavor1" layoutX="-28.0" layoutY="122.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Rockwell'; -fx-font-size: 28; -fx-fill: rgb(255,255,255); -fx-stroke-width: 2; fx-stroke: rgb(0,0,0); -fx-font-weight: bold;" text="SUGAR-FREE GREEN APPLE" wrappingWidth="402.13671875" x="50.0">
+                           <font>
+                              <Font name="Rockwell" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="flavor2" layoutX="-29.0" layoutY="172.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Rockwell'; -fx-font-size: 28; -fx-fill: rgb(255,255,255); -fx-stroke-width: 2; fx-stroke: rgb(0,0,0); -fx-font-weight: bold;" text="SEA SALT CARAMEL" wrappingWidth="402.13671875" x="50.0">
+                           <font>
+                              <Font name="Rockwell" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="flavor3" layoutX="-28.0" layoutY="222.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Rockwell'; -fx-font-size: 28; -fx-fill: rgb(255,255,255); -fx-stroke-width: 2; fx-stroke: rgb(0,0,0); -fx-font-weight: bold;" text="STRAWBERRY LEMON" wrappingWidth="402.13671875" x="50.0">
+                           <font>
+                              <Font name="Rockwell" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="flavor4" layoutX="-28.0" layoutY="272.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Rockwell'; -fx-font-size: 28; -fx-fill: rgb(255,255,255); -fx-stroke-width: 2; fx-stroke: rgb(0,0,0); -fx-font-weight: bold;" text="SUGAR-FREE GREEN APPLE" wrappingWidth="408.13671875" x="50.0">
+                           <font>
+                              <Font name="Rockwell" size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="iceCream" layoutX="-28.0" layoutY="322.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Rockwell'; -fx-font-size: 32; -fx-fill: rgb(255,255,255); -fx-stroke-width: 2; fx-stroke: rgb(0,0,0); -fx-font-weight: bold;" text="Text" wrappingWidth="382.13671875" x="50.0">
+                           <font>
+                              <Font name="Rockwell" size="32.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="generateProduct" layoutX="315.0" layoutY="-25.0" mnemonicParsing="false" onAction="#createProduct" prefHeight="50.0" prefWidth="127.0" style="-fx-background-radius: 15; -fx-background-color: rgb(197,213,1);" text="Go!" textFill="#e85a46">
+                           <font>
+                              <Font size="21.0" />
+                           </font></Button>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="History">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView layoutX="20.0" layoutY="48.0" prefHeight="429.0" prefWidth="703.0" style="-fx-background-color: rgb(232,90,70);" />
+                  <VBox layoutX="39.0" layoutY="71.0" prefHeight="380.0" prefWidth="222.0">
+                     <children>
+                        <ImageView fitHeight="371.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/Gelaticup.png" />
+                           </image>
+                        </ImageView>
+                        <Label contentDisplay="CENTER" prefHeight="90.0" prefWidth="222.0" text="Size product with FLAVOR FLAVOR FLAVOR FLAVOR and VANILLA ice cream" textAlignment="CENTER" textFill="#c5d501" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="261.0" layoutY="73.0" prefHeight="380.0" prefWidth="222.0">
+                     <children>
+                        <ImageView fitHeight="371.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/Gelaticup.png" />
+                           </image>
+                        </ImageView>
+                        <Label contentDisplay="CENTER" prefHeight="90.0" prefWidth="222.0" text="Size product with FLAVOR FLAVOR FLAVOR FLAVOR and VANILLA ice cream" textAlignment="CENTER" textFill="#c5d501" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="483.0" layoutY="73.0" prefHeight="380.0" prefWidth="222.0">
+                     <children>
+                        <ImageView fitHeight="371.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/Gelaticup.png" />
+                           </image>
+                        </ImageView>
+                        <Label contentDisplay="CENTER" prefHeight="90.0" prefWidth="222.0" text="Size product with FLAVOR FLAVOR FLAVOR FLAVOR and VANILLA ice cream" textAlignment="CENTER" textFill="#c5d501" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

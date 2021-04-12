@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Claire Hand';
+    src: url('fonts/ClaireHandRegular.ttf');
+}
+.label {
+    -fx-font-family: 'Claire Hand';
+    -fx-font-size: 47;
+}
+.choice-box > .label {
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+#choice-box-menu-item > .label {
+    -fx-text-fill: black;
+    -fx-font-size: 20;
+}
+.button{
+    -fx-font-family: 'Claire Hand';
+    -fx-font-size: 20;
+}
+.pane > .text{
+    -fx-font-family: 'Rockwell';
+    -fx-font-size: 28;
+    -fx-stroke-width: 2;
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+
+
+
